@@ -77,7 +77,7 @@ try :
                         print(BRed+"NOT FOUND ==>",fine_web,BWhite)   
                     
                     else :
-                        print(":D")
+                        print(BYellow,"  ==> ", fine_web)
 
 
             elif dom == "2":
@@ -117,7 +117,7 @@ try :
                         print(BRed+"NOT FOUND ==>",fine_web,BWhite)   
                     
                     else :
-                        print(":D")
+                        print(BYellow,"  ==> ", fine_web)
 
             elif dom == "0" :
                 print(BWhite,":D")
@@ -174,7 +174,7 @@ try :
                         print(BRed+"NOT FOUND ==>",fine_web,BWhite)   
                     
                     else :
-                        print(":D")
+                        print(BYellow,"  ==> ", fine_web)
 
 
             elif dom == "2":
@@ -215,7 +215,9 @@ try :
                         print(BRed+"NOT FOUND ==>",fine_web,BWhite)   
                     
                     else :
-                        print(":D")
+                        print(BYellow,"  ==> ", fine_web)
+
+
             elif dom == "0" :
                 print(BWhite, ":D")
                 sleep(1)
