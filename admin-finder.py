@@ -30,6 +30,7 @@ print(BRed+"""
 print(BBlue," \nex:\n http://testphp.vulnweb.com/\n ")
 try :
     while True :
+        i = 0
         print(BGreen,"\n 1 = PHP \n 2 = JS \n 0 = EXIT \n ")
 
 
@@ -72,23 +73,23 @@ try :
 
                     elif i <= 99 :
                         i = f"{i}  "
-
-                    else :
-                        i = f"{i} "
-                        
-                    finel_web = target + each
-                    fine_web = "http://" + finel_web
-
-                    response = requests.get(f'http://{finel_web}')
-
-                    if (response.status_code == 200 ) :
-                        print(BGreen+f"{i}FOUND ===> " , fine_web)
-
-                    elif (response.status_code == 404) :
-                        print(BRed+f"{i}NOT FOUND ==>",fine_web,BWhite)   
                     
                     else :
-                        print(BYellow,f"{i}  ==> ", fine_web)
+                        i = f"{i} "
+                    
+                    finel_web = target + each
+                    fine_web = "http://" + finel_web
+                    
+                    response = requests.get(f'http://{finel_web}')
+                        
+                    if (response.status_code == 200) :
+                        print(BGreen+f"{i}| FOUND ===>",fine_web)
+
+                    elif (response.status_code == 404) :
+                        print(BRed+f"{i}| NOT FOUND ==>",fine_web)
+                        
+                    else :
+                        print(BYellow,f"{i}| ===>", fine_web)
 
 
             elif dom == "2":
@@ -123,23 +124,23 @@ try :
 
                     elif i <= 99 :
                         i = f"{i}  "
-
-                    else :
-                        i = f"{i} "
-                        
-                    finel_web = target + each
-                    fine_web = "https://" + finel_web
-
-                    response = requests.get(f'https://{finel_web}')
-
-                    if (response.status_code == 200 ) :
-                        print(BGreen+f"{i}FOUND ===> " , fine_web)
-
-                    elif (response.status_code == 404) :
-                        print(BRed+f"{i}NOT FOUND ==>",fine_web,BWhite)   
                     
                     else :
-                        print(BYellow,f"{i}  ==> ", fine_web)
+                        i = f"{i} "
+                    
+                    finel_web = target + each
+                    fine_web = "http://" + finel_web
+                    
+                    response = requests.get(f'http://{finel_web}')
+                        
+                    if (response.status_code == 200) :
+                        print(BGreen+f"{i}| FOUND ===>",fine_web)
+
+                    elif (response.status_code == 404) :
+                        print(BRed+f"{i}| NOT FOUND ==>",fine_web)
+                        
+                    else :
+                        print(BYellow,f"{i}| ===>", fine_web)
 
             elif dom == "0" :
                 print(BWhite,":D")
@@ -183,7 +184,7 @@ try :
                         'modelsearch/admin.js','admincontrol/login.js','adm/admloginuser.js','admloginuser.js','admin2.js','admin2/login.js','admin2/index.js','usuarios/login.js',
                         'adm/index.js','adm.js','affiliate.js','adm_auth.js','memberadmin.js','administratorlogin.js']
 
-                for each in loginjs :
+                for each in loginphp :
                     i = int(i)
                     i = i + 1
                     if i <= 9:
@@ -191,23 +192,23 @@ try :
 
                     elif i <= 99 :
                         i = f"{i}  "
-
-                    else :
-                        i = f"{i} "
-                        
-                    finel_web = target + each
-                    fine_web = "http://" + finel_web
-
-                    response = requests.get(f'http://{finel_web}')
-
-                    if (response.status_code == 200 ) :
-                        print(BGreen+f"{i}FOUND ===> " , fine_web)
-
-                    elif (response.status_code == 404) :
-                        print(BRed+f"{i}NOT FOUND ==>",fine_web,BWhite)   
                     
                     else :
-                        print(BYellow,f"{i}  ==> ", fine_web)
+                        i = f"{i} "
+                    
+                    finel_web = target + each
+                    fine_web = "http://" + finel_web
+                    
+                    response = requests.get(f'http://{finel_web}')
+                        
+                    if (response.status_code == 200) :
+                        print(BGreen+f"{i}| FOUND ===>",fine_web)
+
+                    elif (response.status_code == 404) :
+                        print(BRed+f"{i}| NOT FOUND ==>",fine_web)
+                        
+                    else :
+                        print(BYellow,f"{i}| ===>", fine_web)
 
 
             elif dom == "2":
@@ -235,7 +236,7 @@ try :
                         'modelsearch/admin.js','admincontrol/login.js','adm/admloginuser.js','admloginuser.js','admin2.js','admin2/login.js','admin2/index.js','usuarios/login.js',
                         'adm/index.js','adm.js','affiliate.js','adm_auth.js','memberadmin.js','administratorlogin.js']
 
-                for each in loginjs :
+                for each in loginphp :
                     i = int(i)
                     i = i + 1
                     if i <= 9:
@@ -243,24 +244,23 @@ try :
 
                     elif i <= 99 :
                         i = f"{i}  "
-
-                    else :
-                        i = f"{i} "
-                        
-                    finel_web = target + each
-                    fine_web = "https://" + finel_web
-
-                    response = requests.get(f'https://{finel_web}')
-
-                    if (response.status_code == 200 ) :
-                        print(BGreen+f"{i}FOUND ===> " , fine_web)
-
-                    elif (response.status_code == 404) :
-                        print(BRed+f"{i}NOT FOUND ==>",fine_web,BWhite)   
                     
                     else :
-                        print(BYellow,f"{i}  ==> ", fine_web)
+                        i = f"{i} "
+                    
+                    finel_web = target + each
+                    fine_web = "http://" + finel_web
+                    
+                    response = requests.get(f'http://{finel_web}')
+                        
+                    if (response.status_code == 200) :
+                        print(BGreen+f"{i}| FOUND ===>",fine_web)
 
+                    elif (response.status_code == 404) :
+                        print(BRed+f"{i}| NOT FOUND ==>",fine_web)
+                        
+                    else :
+                        print(BYellow,f"{i}| ===>", fine_web)
 
             elif dom == "0" :
                 print(BWhite, ":D")
